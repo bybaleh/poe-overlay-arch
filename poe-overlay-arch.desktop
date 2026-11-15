@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=PoE Overlay (Arch X11)
+Comment=Path of Exile clipboard inspector
+Exec=poe-overlay-arch
+Terminal=false
+Categories=Game;Utility;
