@@ -5,6 +5,7 @@ for bin in python3 xclip xdotool xbindkeys; do command -v "$bin" >/dev/null || {
 BASE="$(cd "$(dirname "$0")" && pwd)"
 mkdir -p "$HOME/.local/bin" "$HOME/.local/share/applications" "$HOME/.config"
 install -m 755 "$BASE/poe_overlay.py" "$HOME/.local/bin/poe-overlay-arch"
+install -m 644 "$BASE/trade_engine.py" "$HOME/.local/bin/trade_engine.py"
 install -m 644 "$BASE/poe-overlay-arch.desktop" "$HOME/.local/share/applications/poe-overlay-arch.desktop"
 if [[ -f "$HOME/.xbindkeysrc" ]]; then echo 'Existing ~/.xbindkeysrc unchanged. Add entries from xbindkeys.conf manually.'; else cp "$BASE/xbindkeys.conf" "$HOME/.xbindkeysrc"; fi
 echo 'Installed. Run: ~/.local/bin/poe-overlay-arch'
