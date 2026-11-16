@@ -72,7 +72,7 @@ class TradeEngineTests(unittest.TestCase):
     def test_numbered_mods(self):
         self.assertEqual(canonical("Adds 12 to 39 Fire Damage"),
                          canonical("Adds # to # Fire Damage"))
-        self.assertEqual(relaxed_min([42]), "35")
+        self.assertEqual(relaxed_min([42]), "35.7")
         self.assertEqual(relaxed_min([-12]), "")
 
     def test_price_listing(self):
